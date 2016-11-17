@@ -1,0 +1,9 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 102 ciObject found
+ciMethod java/lang/Object hashCode ()I 2049 1 256 0 -1
+ciMethod java/lang/String hashCode ()I 2761 32769 1494 0 320
+ciMethod java/util/Arrays hashCode ([Ljava/lang/Object;)I 2137 2193 6792 0 0
+ciMethodData java/lang/String hashCode ()I 2 20919 orig 264 184 158 113 87 0 0 0 0 128 79 233 19 0 0 0 0 152 1 0 0 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 0 0 233 35 0 0 185 13 2 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 11 0 4 0 1 0 120 0 0 0 255 255 255 255 7 0 6 0 0 0 0 0 data 15 0x60007 0x1aa 0x78 0x2d3 0xe0007 0x1 0x58 0x2d2 0x1e0007 0x2d2 0x38 0x417d 0x2d0003 0x417d 0xffffffffffffffe0 oops 0
+ciMethodData java/util/Arrays hashCode ([Ljava/lang/Object;)I 2 6798 orig 264 184 158 113 87 0 0 0 0 224 41 251 19 0 0 0 0 8 2 0 0 120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17 1 0 0 25 204 0 0 33 98 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 11 0 3 0 1 0 192 0 0 0 255 255 255 255 7 0 1 0 0 0 0 0 data 24 0x10007 0x1983 0x20 0x0 0x130007 0x1987 0xa0 0xc40 0x220007 0xc40 0x38 0x0 0x260003 0x0 0x48 0x2bc005 0x2a 0x16d62b80 0xc09 0x16d62c30 0x11 0x330003 0xc44 0xffffffffffffff78 oops 2

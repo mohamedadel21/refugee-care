@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_toolbar"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_back_profile"
+                android:src="@drawable/go_back_left_arrow"
+                android:background="@color/colorPrimary"
+                android:layout_centerVertical="true"
+
+                android:onClick="onClick"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/profile_padding"
+        android:paddingTop="@dimen/profile_padding">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+
+            <ImageView
+            android:layout_width="105dp"
+            android:layout_height="115dp"
+            android:id="@+id/img_profile_pic"
+            android:src="@drawable/profile_pic"
+            android:scaleType="fitXY"
+                />
+
+
+                <ImageButton
+                    android:id="@+id/button_edit_pic_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_alt_black"
+                    android:background="@color/gray"
+                    android:layout_gravity="bottom|right"
+                    android:paddingRight="@dimen/right_padding"
+                    android:alpha=".8"
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:clickable="false"
+                    android:textAlignment="center"
+                    android:text="edit"
+                    android:textSize="18sp"
+                    android:paddingRight="@dimen/small_vertical_margin"
+                    >
+                </TextView>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="@dimen/small_vertical_margin"
+            android:text="Ahmed Khattab"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:id="@+id/text_name_profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/text_job_profile"
+                android:text="android developer"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="follow +"
+                android:id="@+id/button_follow_profile"
+                android:background="@drawable/button_raduis"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/small_vertical_margin"
+                android:textStyle="bold"
+                android:onClick="onClick"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ABOUT"
+        android:background="@color/feed_bg"
+        android:textColor="@color/black"
+        android:paddingLeft="@dimen/feed_item_margin"
+        android:paddingTop="@dimen/feed_item_margin"
+        android:paddingBottom="@dimen/feed_item_margin"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_phone"
+            android:id="@+id/button_call_profile"
+            android:layout_margin="@dimen/feed_item_margin"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01012310171"
+            android:id="@+id/text_phone_profile"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingRight="@dimen/left_padding"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_email"
+            android:id="@+id/ic_email_profile"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/feed_item_margin"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ahmedkhtab95@gmail.com"
+            android:id="@+id/text_email_profile"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_place"
+            android:id="@+id/img_place"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/feed_item_margin"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="menofia / shebien elkom"
+            android:id="@+id/text_address_profile"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

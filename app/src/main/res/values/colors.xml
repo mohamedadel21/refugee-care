@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c9a1</color>
+    <color name="colorPrimaryDark">#00bf99</color>
+    <color name="colorAccent">#1ec900</color>
+
+    <color name="back_buton_color">#00c9c6</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0952ff</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="gray">#ededed</color>
+
+
+
+    <color name="black">#000</color>
+</resources>

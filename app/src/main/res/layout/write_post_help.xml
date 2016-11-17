@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohammed.refugeecare.app.WritePost">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_write_post"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_back_need_post"
+                android:src="@drawable/ic_arrow_back_white"
+                android:background="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:onClick="closeActivity"
+                android:layout_alignParentLeft="true"
+                android:foregroundTint="@android:color/white"
+                android:foregroundTintMode="src_atop"
+                android:visibility="visible"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:id="@+id/button_add_post"
+                android:onClick="writePost"
+                android:background="@color/colorPrimary"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="clip_horizontal">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edit_text_post_descreption"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Post Discreption"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edit_text_post_url"
+                android:layout_below="@id/edit_text_post_descreption"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Add url "/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_text_post_url"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/frameLayout2"
+                android:background="@drawable/edit_text_style"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:backgroundTint="@color/timestamp">
+
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_get_img_from_gallary"
+                    android:src="@drawable/ic_camera_alt_black"
+                    android:scaleType="fitStart"
+                    android:onClick="getImgFromGallary"
+                    android:background="@color/timestamp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="choose image from gallary "
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_from_gallary_need_post"
+                android:layout_below="@+id/frameLayout2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Post"
+                android:id="@+id/button_add_post"
+                android:textSize="18sp"
+                android:layout_below="@id/img_from_gallary_need_post"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:onClick="writePost"
+                android:visibility="gone"/>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_add_post"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                >
+
+            </ProgressBar>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

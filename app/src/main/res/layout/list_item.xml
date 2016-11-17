@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:contextClickable="false"
+              android:background="@drawable/edit_text_style"
+              android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/feed_item_padding_left_right"
+        android:paddingRight="@dimen/feed_item_padding_left_right"
+        >
+
+        <ImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/abc_ic_star_black_36dp"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/text_job_name_api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_18"
+                android:hint="job name"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/text_time_job_api"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="@dimen/feed_item_timestamp"
+                android:hint="time / place"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/text_company_name_job_api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_14"
+                android:hint="Company Name"
+                android:text="company name"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="applay"
+            android:id="@+id/button_applay_job_api"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_raduis_embty"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill_horizontal"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_18"
+                android:hint="Company Name"
+                android:text="full/part time"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="experience needed"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="place"
+                android:textColor="#000"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill_horizontal"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:id="@+id/text_full_part_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_18"
+                android:hint="Company Name"
+                android:text="time of job"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="experience of job"
+                android:id="@+id/text_expreience_job_api"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="place of job"
+                android:id="@+id/text_job_place_api"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

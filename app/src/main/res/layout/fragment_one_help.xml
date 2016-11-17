@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true">
+
+    <!--fillViewport important to make scroll include all views-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_fragment1"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FABASK"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="right|bottom"
+            app:backgroundTint="#00d2b1"
+            android:src="@drawable/ic_add_circle_white2"
+            android:padding="10dp"
+            android:onClick="gotoAddHelpPost" />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_load_help_data"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            >
+
+        </ProgressBar>
+
+    </FrameLayout>
+</LinearLayout>

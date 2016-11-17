@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1074044432115",
+    "firebase_url": "https://refugee-care-2.firebaseio.com",
+    "project_id": "refugee-care-2",
+    "storage_bucket": "refugee-care-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074044432115:android:d173bf5431bd439a",
+        "android_client_info": {
+          "package_name": "com.example.mohammed.refugeecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074044432115-ojk7ghfmccvh1eubo2o0irl3t4ujqnsf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohammed.refugeecare",
+            "certificate_hash": "1AA12D64941EFBF43E1CE8E032F58E5265CA9A8E"
+          }
+        },
+        {
+          "client_id": "1074044432115-tjmpa7q20au95laj5uhcq6b7qid95qf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa1XHIAhtINY3y8CGYQMONFAOcm2Y6eZ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074044432115-tjmpa7q20au95laj5uhcq6b7qid95qf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

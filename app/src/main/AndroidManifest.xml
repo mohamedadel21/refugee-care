@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.mohammed.refugeecare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:name=".FireBase"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Refugee Care"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AppThemesignin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="sign up"
+            android:parentActivityName=".SignInActivity"
+            android:theme="@style/AppThemesignup">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mohammed.refugeecare.SignInActivity" />
+        </activity>
+        <activity
+            android:name=".FogotPasswordActivity"
+            android:parentActivityName=".SignInActivity"
+            android:theme="@style/AppThemefogotPassword">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mohammed.refugeecare.SignInActivity" />
+        </activity>
+
+
+        <activity android:name=".app.MainActivity"
+                  android:theme="@style/AppThemeHome"
+            android:label="Refugee Care"
+                  />
+        <activity android:name=".app.WritePost"/>
+
+        <activity android:name=".app.AddJob">
+        </activity>
+
+        <activity android:name=".app.Profile"/>
+        <activity android:name=".app.CharityProfile"/>
+    </application>
+
+</manifest>

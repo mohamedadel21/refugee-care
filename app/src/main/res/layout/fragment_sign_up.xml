@@ -1,0 +1,297 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mohammed.refugeecare.SignUpActivityFragment"
+    tools:showIn="@layout/activity_sign_up"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#00c9c6"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="87dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/firstNameEdittext"
+            android:background="@drawable/edittext" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignStart="@+id/view"
+        android:id="@+id/view2"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Last Name"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/UserNameEdittext"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view3"
+        android:layout_below="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignStart="@+id/view2"
+        android:layout_alignRight="@+id/view2"
+        android:layout_alignEnd="@+id/view2">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Your Email"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/EMailEditText"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view4"
+
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3"
+        android:layout_alignRight="@+id/view3"
+        android:layout_alignEnd="@+id/view3">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/passwordEdittext"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view5"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/view4"
+        android:layout_alignStart="@+id/view4"
+        android:layout_marginTop="200dp"
+        android:layout_alignRight="@+id/view4"
+        android:layout_alignEnd="@+id/view4">
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="Confirm Password"
+    android:inputType="textPassword"
+
+    android:gravity="center"
+    android:textSize="14dp"
+        android:id="@+id/confirmPasswordEdittext"
+        android:background="@drawable/edittext" />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view6"
+
+        android:layout_below="@+id/view5"
+        android:layout_alignLeft="@+id/view5"
+        android:layout_alignStart="@+id/view5"
+        android:layout_alignRight="@+id/view5"
+        android:layout_alignEnd="@+id/view5">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone Number"
+            android:inputType="numberDecimal"
+
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/phoneEdittext"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view7"
+
+        android:layout_below="@+id/view6"
+        android:layout_alignLeft="@+id/view6"
+        android:layout_alignStart="@+id/view6"
+        android:layout_alignRight="@+id/view6"
+        android:layout_alignEnd="@+id/view6">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Your job"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/jobEdittext"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view8"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/view7"
+        android:layout_alignStart="@+id/view7"
+        android:layout_marginTop="355dp"
+        android:layout_alignRight="@+id/view7"
+        android:layout_alignEnd="@+id/view7">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Your Address"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/addressEdittext"
+            android:background="@drawable/edittext" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view9"
+
+
+
+        android:layout_alignLeft="@+id/view8"
+        android:layout_alignStart="@+id/view8"
+        android:layout_marginTop="405dp"
+        android:layout_alignRight="@+id/view8"
+        android:layout_alignEnd="@+id/view8">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Birth Date"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:id="@+id/birthDateEdittext"
+            android:background="@drawable/edittext"
+            android:layout_gravity="center"/>
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:id="@+id/view10"
+
+        android:layout_below="@+id/view9"
+        android:layout_alignLeft="@+id/view9"
+        android:layout_alignStart="@+id/view9"
+        android:layout_alignRight="@+id/view9"
+        android:layout_alignEnd="@+id/view9">
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Spinner
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:hint="Birth Date"
+            android:gravity="center"
+            android:textSize="14dp"
+
+            android:id="@+id/genderspinner"
+            android:layout_below="@+id/view9"
+            android:foregroundGravity="center"
+            android:layout_alignLeft="@+id/view9"
+            android:layout_alignStart="@+id/view9"
+            android:layout_alignRight="@+id/view9"
+            android:layout_alignEnd="@+id/view9"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dialog" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/refugeeOrDonatorspinner"
+        android:layout_below="@+id/genderspinner"
+        android:layout_alignRight="@+id/genderspinner"
+        android:layout_alignEnd="@+id/genderspinner"
+        android:layout_alignLeft="@+id/view9"
+        android:layout_alignStart="@+id/view9"
+        android:foregroundGravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/buttonPicProfImg"
+        android:background="@color/white"
+        android:layout_below="@+id/refugeeOrDonatorspinner"
+        android:layout_alignRight="@+id/refugeeOrDonatorspinner"
+        android:layout_alignEnd="@+id/refugeeOrDonatorspinner"
+        android:src="@drawable/ic_account_circle_black"
+        android:scaleType="fitXY"
+        android:onClick="chooseProgilePic"
+        android:visibility="gone"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/SIGNUPButton"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/buttonPicProfImg"
+        android:layout_alignLeft="@+id/refugeeOrDonatorspinner"
+        android:layout_alignStart="@+id/refugeeOrDonatorspinner"
+        android:layout_alignRight="@+id/refugeeOrDonatorspinner"
+        android:layout_alignEnd="@+id/refugeeOrDonatorspinner"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="15dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:foregroundGravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
+</ScrollView>

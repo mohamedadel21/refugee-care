@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Refugee Care</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_fogot_password">FogotPasswordActivity</string>
+
+
+
+    <string name="job_link">Link of job</string>
+    <string name="job_date">applay Date</string>
+    <string name="job_location">Location</string>
+    <string name="job_company">company</string>
+    <string name="job_title">Job Title</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

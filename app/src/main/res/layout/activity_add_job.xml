@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mohammed.refugeecare.app.AddJob"
+    android:background="@color/material_deep_teal_200">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/job_toolbar"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_back_job_post"
+                android:src="@drawable/ic_arrow_back_white"
+                android:background="@color/colorPrimary"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:onClick="closeActivity"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="post"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:id="@+id/button_post_add_job"
+                android:onClick="postJob"
+                android:textSize="@dimen/text_size_m"
+                android:layout_gravity="right"
+                />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="clip_horizontal">
+            <EditText
+                android:id="@+id/text_job_title"
+                android:hint="اسم الوظيفة"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@drawable/button_raduis_embty"
+                android:gravity="center"/>
+            <EditText
+
+                android:id="@+id/text_job_company"
+                android:hint="الشركة التابعه لها الوظيفه "
+
+                android:layout_below="@id/text_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@drawable/button_raduis_embty"
+                android:gravity="center"
+                />
+
+            <EditText
+
+                android:id="@+id/text_job_location"
+                android:hint="مكان الوظيفة"
+
+                android:layout_below="@id/text_job_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@drawable/button_raduis_embty"
+                android:gravity="center"
+                />
+
+
+            <EditText
+                android:id="@+id/text_job_description"
+                android:hint="تفاصيل اكتر عن الوظيفه والراتب"
+
+                android:layout_below="@id/text_job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@drawable/button_raduis_embty"
+                android:gravity="center"
+
+                />
+            <EditText
+            android:id="@+id/text_job_link"
+            android:hint="رابط الانترنت للوظيفه ان امكن"
+
+            android:layout_below="@id/text_job_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:background="@drawable/button_raduis_embty"
+            android:gravity="center"
+
+            />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frameLayout_add_job"
+
+                android:layout_below="@+id/text_job_link"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_style"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:backgroundTint="@color/gray">
+
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button_get_img_from_gallary_job_activity"
+                    android:src="@drawable/ic_camera_alt_black"
+                    android:scaleType="fitStart"
+                    android:onClick="getImgFromGallary"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="choose image from gallary "
+                    android:id="@+id/textView2"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"/>
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/img_picked_addjop_activity"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/frameLayout_add_job"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_style"
+                android:backgroundTint="@color/gray"
+                />
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_add_job"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                >
+
+            </ProgressBar>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

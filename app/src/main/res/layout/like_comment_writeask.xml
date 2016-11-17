@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_margin="5dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#f8f8f8">
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|top"
+                android:id="@+id/likeTextViewASK"
+                android:clickable="true"
+                android:text="Like"
+                android:textSize="12sp"
+
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:background="#f8f8f8"
+                android:textColor="#7a7a7a" />
+
+            <ImageButton
+                android:id="@+id/imageButton_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_thumb_up_black"
+                android:scaleType="fitStart"
+                android:background="@color/white"
+
+
+                android:paddingLeft="20dp"
+                android:foregroundGravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="left|center_vertical"
+                android:alpha="0.3" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="#f8f8f8">
+
+            <Button
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+                android:text="Comment"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:background="#f8f8f8"
+                android:textColor="#7a7a7a"
+                android:id="@+id/commentTextViewASK"
+               />
+
+            <ImageButton
+                android:id="@+id/imageButton_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_comment_black"
+                android:scaleType="fitStart"
+                android:background="@color/white"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:alpha="0.3" />
+        </FrameLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="match_parent"
+            android:id="@+id/text_num_of_likes"
+            android:hint="0 اعجاب"
+            android:gravity="center"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/text_num_of_comments"
+            android:hint="0 تعليق"
+            android:gravity="center"
+            android:textSize="11sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/feed_item_margin"
+        android:id="@+id/commentlayoutAsk">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edittext_comment"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:hint="اكتب تعليق "
+            android:textSize="14dp"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton_comment_action"
+            android:src="@drawable/ic_send_black"
+            android:background="@drawable/empty_button"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="3dp"
+            android:alpha="0.5" />
+
+    </LinearLayout>
+
+</LinearLayout>
